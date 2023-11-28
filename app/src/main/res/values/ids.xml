@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="logoutBtn" type="id" />
+    <item name="main_title" type="id" />
+    <item name="linearLayout" type="id" />
+</resources>

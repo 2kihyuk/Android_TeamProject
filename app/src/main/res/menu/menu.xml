@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/list"
+        android:enabled="true"
+        android:icon="@drawable/sell_list"
+        android:title="홈"></item>
+
+    <item android:id="@+id/chat"
+        android:enabled="true"
+        android:icon="@drawable/chat_img"
+        android:title="채팅"></item>
+
+    <item android:id="@+id/settings"
+        android:enabled="true"
+        android:icon="@drawable/settings"
+        android:title="나의 정보"></item>
+
+</menu>
