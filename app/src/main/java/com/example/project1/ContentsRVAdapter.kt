@@ -57,7 +57,7 @@ class ContentsRVAdapter(val items: MutableList<ContentModel>) : RecyclerView.Ada
 //            val listImage = itemView.findViewById<ImageView>(R.id.listImage)
 
             contentTitle.text= item.listTitle
-            listPrice.text = item.listPrice
+            listPrice.text = item.listPrice.toString()
             listContent.text  = item.listContents
             listStatus.text=item.forSale
 

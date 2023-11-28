@@ -160,6 +160,7 @@ class HomeFragment : Fragment() {
                                 val sellerid = doc.getString("ID") ?: ""
                                 val uid =doc.getString("uid")?:""
 
+
                                 val contentModel = ContentModel(listTitle, listContents, listPrice, doc.id, forSale, sellerid,uid)
                                 items.add(contentModel)
                             }

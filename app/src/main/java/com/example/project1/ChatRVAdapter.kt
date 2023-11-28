@@ -42,7 +42,9 @@ class ChatRVAdapter(val chatitem:MutableList<ChatModel>) : RecyclerView.Adapter<
         fun bindItem(item: ChatModel){
             val senderid = itemView.findViewById<TextView>(R.id.senderId)
             val getmessagecontent = itemView.findViewById<TextView>(R.id.GetMessageContent)
+            val what = itemView.findViewById<TextView>(R.id.what)
 
+            what.text = item.what
             senderid.text = "보낸 사람 : " + item.senderId
             getmessagecontent.text= item.ChatContent
 

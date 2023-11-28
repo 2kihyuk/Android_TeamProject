@@ -73,7 +73,10 @@ class EditProductActivity : AppCompatActivity() {
 
         binding.backButton.setOnClickListener {
             val intent = Intent(this,ListItem::class.java)
-            startActivity(intent)
+            intent.putExtra("title",binding.titleEditText.text.toString())
+            intent.putExtra("content",binding.ContentEditText.text.toString())
+            intent.putExtra("price",binding.priceEditText.text.toString())
+            setResult(RESULT_OK, intent)
             finish()
         }
 

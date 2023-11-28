@@ -47,7 +47,7 @@ class ListItemNo : AppCompatActivity() {
 
 
         binding.detailTitle.text=title
-        binding.price.text=price +"원"
+        binding.price.text=price
         binding.detailContent.text=content
         binding.SellerNameTv.text = sellerid
 
@@ -72,6 +72,7 @@ class ListItemNo : AppCompatActivity() {
             val intent = Intent(this,ChatActivity::class.java)
             intent.putExtra("receiverId",uid)
             intent.putExtra("sellerName",sellerid)
+            intent.putExtra("what",title)
             //여기서 판매자의 정보를 보내야함. 판매자의 uid를 보내서.chatactivity에서 받아서,
             startActivity(intent)
             finish()

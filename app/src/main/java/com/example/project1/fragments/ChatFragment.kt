@@ -57,9 +57,10 @@ class ChatFragment : Fragment() {
                 val receiverId = doc.getString("receiverId")
                 val senderId = doc.getString("senderId")
                 val content = doc.getString("content")
+                val what = doc.getString("what")
 
                 if(auth.currentUser?.uid.toString()==receiverId.toString()){
-                    val chatmodel = ChatModel(senderId.toString(),content.toString())
+                    val chatmodel = ChatModel(senderId.toString(),content.toString(),what.toString())
                     allItems.add(chatmodel)
                 }
 

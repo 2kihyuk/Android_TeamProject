@@ -36,12 +36,14 @@ class ChatActivity : AppCompatActivity() {
             val chattext = binding.ChatText.text.toString()
             val receiveruid = intent.getStringExtra("receiverId") //해당 글 작성자의 uid
             val uid = intent.getStringExtra("sellerName")
+            val what = intent.getStringExtra("what")
 
 
             val Message = hashMapOf(
                 "content" to chattext,
                 "receiverId" to receiveruid,
-                "senderId" to uid
+                "senderId" to uid,
+                "what" to  what
             )
             MessageCollectionRef.add(Message).addOnSuccessListener {
                 Toast.makeText(this,"메시지 전송 성공",Toast.LENGTH_SHORT).show()

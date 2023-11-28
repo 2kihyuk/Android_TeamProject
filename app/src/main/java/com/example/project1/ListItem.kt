@@ -38,11 +38,11 @@ private lateinit var usersCollectionRef: DocumentReference
         val content = intent.getStringExtra("listContents")
         val price = intent.getStringExtra("listPrice")
         val sellerid = intent.getStringExtra("ID")
-
+//        val priceWithWon = "$price"+"원"
 
 
         binding.detailTitle.text=title
-        binding.price.text=price +"원"
+        binding.price.text=price
         binding.detailContent.text=content
         binding.SellerNameTv.text = sellerid
 
@@ -86,6 +86,22 @@ private lateinit var usersCollectionRef: DocumentReference
         }
 
     }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        if (resultCode == RESULT_OK) {
+            val updatedTitle = data?.getStringExtra("title")
+            val updatedContent = data?.getStringExtra("content")
+            val updatedPrice = data?.getStringExtra("price")
+
+            // Update your UI with the new data
+            binding.detailTitle.text = updatedTitle
+            binding.detailContent.text = updatedContent
+            binding.price.text = updatedPrice
+        }
+    }
+
 
 
 }
