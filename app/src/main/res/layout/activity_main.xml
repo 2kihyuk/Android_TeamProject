@@ -6,58 +6,65 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+
+    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
+    <!--        android:id="@+id/bottomnavigation"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:menu="@menu/menu"-->
+    <!--        tools:ignore="MissingConstraints"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        ></com.google.android.material.bottomnavigation.BottomNavigationView>-->
+
     <LinearLayout
         android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_width="413dp"
+        android:layout_height="94dp"
+        android:layout_marginTop="-20dp"
+        android:gravity="center_vertical|center_horizontal"
         android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        app:layout_constraintTop_toTopOf="parent">
+        tools:layout_editor_absoluteX="0dp">
+
+        <!--        <Spinner-->
+        <!--            android:id="@+id/spinnerStatus"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="27dp"-->
+        <!--            android:layout_marginStart="1dp"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            android:entries="@array/filter_options"-->
+
+        <!--            app:layout_constraintHorizontal_bias="1.0" />-->
 
         <TextView
             android:id="@+id/main_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:text="중고거래"
+            android:layout_width="311dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="100dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="판매목록"
+            android:textColor="#000090"
             android:textSize="30dp"
-            android:textStyle="bold"
-
-            ></TextView>
-
-<!--        <Spinner-->
-<!--            android:id="@+id/spinnerStatus"-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="27dp"-->
-<!--            android:layout_marginStart="1dp"-->
-<!--            android:layout_marginTop="20dp"-->
-<!--            android:layout_marginEnd="16dp"-->
-<!--            android:entries="@array/filter_options"-->
-
-<!--            app:layout_constraintHorizontal_bias="1.0" />-->
+            android:textStyle="bold"></TextView>
 
         <Button
             android:id="@+id/logoutBtn"
             android:layout_width="100dp"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="190dp"
-            android:textSize="12dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/buttonstyle"
+            android:text="로그아웃"
 
-            android:text="로그아웃"></Button>
+            android:textSize="12dp"></Button>
 
 
     </LinearLayout>
-
-
-<!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-<!--        android:id="@+id/bottomnavigation"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:menu="@menu/menu"-->
-<!--        tools:ignore="MissingConstraints"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        ></com.google.android.material.bottomnavigation.BottomNavigationView>-->
 
     <androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerView"
@@ -66,7 +73,7 @@
         android:layout_height="match_parent"
         app:defaultNavHost="true"
         app:navGraph="@navigation/main_nav"
-        android:layout_marginTop="60dp"
-         />
+        android:layout_marginTop="70dp"
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -25,49 +25,28 @@
             등록 사용자의 이름이 들어갈 공간, 상품이름, 상품의 구체적인 설명 들어갈 공간 레이아웃
             꾸며주세요-->
 
-            <ImageView
-                android:id="@+id/detailImage"
-                android:layout_width="match_parent"
-                android:layout_height="300dp"
-                android:scaleType="centerCrop"
-                android:src="@drawable/sample8"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
 
             <ImageView
                 android:id="@+id/profileBg"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:layout_marginStart="15dp"
-                android:layout_marginTop="15dp"
+                android:layout_width="65dp"
+                android:layout_height="74dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="30dp"
                 android:background="@drawable/rounded_corner_frofile"
                 app:layout_constraintBottom_toTopOf="@+id/view2"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/detailImage" />
+                app:layout_constraintTop_toBottomOf="@+id/backButton" />
 
             <ImageView
                 android:id="@+id/profileImage"
-                android:layout_width="30dp"
-                android:layout_height="40dp"
+                android:layout_width="38dp"
+                android:layout_height="45dp"
                 android:src="@drawable/user"
                 app:layout_constraintBottom_toBottomOf="@+id/profileBg"
                 app:layout_constraintEnd_toEndOf="@+id/profileBg"
                 app:layout_constraintStart_toStartOf="@+id/profileBg"
                 app:layout_constraintTop_toTopOf="@+id/profileBg"
                 app:tint="@color/white" />
-
-            <TextView
-                android:id="@+id/SellerName_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="20dp"
-                android:text="nickname"
-                android:textSize="17dp"
-                android:textStyle="bold"
-                app:layout_constraintStart_toEndOf="@+id/profileBg"
-                app:layout_constraintTop_toBottomOf="@+id/detailImage" />
 
             <!--            <TextView-->
             <!--                android:id="@+id/address"-->
@@ -112,6 +91,22 @@
             <!--                app:layout_constraintEnd_toEndOf="parent"-->
             <!--                app:layout_constraintTop_toBottomOf="@+id/mannerEmoji" />-->
 
+            <TextView
+                android:id="@+id/SellerName_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="120dp"
+                android:text="nickname"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/detailTitle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.084"
+                app:layout_constraintStart_toEndOf="@+id/profileBg"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
             <View
                 android:id="@+id/view2"
                 android:layout_width="match_parent"
@@ -150,12 +145,12 @@
                 android:id="@+id/backButton"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
                 android:contentDescription="뒤로가기"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                android:backgroundTint="@color/white"
+                android:backgroundTint="#000090"
                 android:background="@drawable/previous" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
@@ -205,21 +200,21 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent" />
 
-<!--        <androidx.appcompat.widget.AppCompatButton-->
-<!--            android:id="@+id/Editbutton"-->
-<!--            android:layout_width="100dp"-->
-<!--            android:layout_height="35dp"-->
-<!--            android:layout_marginRight="15dp"-->
-<!--            android:layout_marginBottom="15dp"-->
-<!--            android:background="@drawable/button"-->
-<!--            android:text="수정하기"-->
-<!--            android:contentDescription="수정하기"-->
-<!--            android:textColor="@color/white"-->
-<!--            android:textSize="15sp"-->
-<!--            android:textStyle="bold"-->
-<!--            android:stateListAnimator="@null"-->
-<!--            app:layout_constraintBottom_toBottomOf="parent"-->
-<!--            app:layout_constraintEnd_toStartOf="@id/Chatbutton" />-->
+        <!--        <androidx.appcompat.widget.AppCompatButton-->
+        <!--            android:id="@+id/Editbutton"-->
+        <!--            android:layout_width="100dp"-->
+        <!--            android:layout_height="35dp"-->
+        <!--            android:layout_marginRight="15dp"-->
+        <!--            android:layout_marginBottom="15dp"-->
+        <!--            android:background="@drawable/button"-->
+        <!--            android:text="수정하기"-->
+        <!--            android:contentDescription="수정하기"-->
+        <!--            android:textColor="@color/white"-->
+        <!--            android:textSize="15sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:stateListAnimator="@null"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toStartOf="@id/Chatbutton" />-->
 
 
         <androidx.appcompat.widget.AppCompatButton

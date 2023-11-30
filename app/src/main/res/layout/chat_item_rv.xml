@@ -28,6 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
+
             <TextView
                 android:id="@+id/what"
                 android:layout_width="match_parent"
@@ -37,7 +38,6 @@
                 android:text="어떤 아이템에 대해서 온 메시지인지."
                 android:textSize="16sp"
                 android:textStyle="bold" />
-
 
             <TextView
                 android:id="@+id/senderId"
@@ -59,9 +59,9 @@
                 android:textStyle="bold" />
 
 
-            </LinearLayout>
-
-
         </LinearLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 

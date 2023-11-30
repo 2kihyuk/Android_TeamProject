@@ -7,14 +7,14 @@
 
     <ImageButton
         android:id="@+id/backButton"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:contentDescription="뒤로가기"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:backgroundTint="@color/black"
+        android:backgroundTint="#000090"
         android:background="@drawable/previous" />
 
     <LinearLayout
@@ -29,11 +29,10 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="150dp"
-
+            android:layout_marginStart="130dp"
             android:text="아이템 등록"
-            android:textColor="@color/black"
-            android:textSize="20sp"
+            android:textColor="#000090"
+            android:textSize="30dp"
             android:textStyle="bold" />
 
     </LinearLayout>
@@ -47,98 +46,104 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbarLayout" />
 
+
+    <!--    <Button-->
+    <!--        android:id="@+id/imageAddButton"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:backgroundTint="@color/orange"-->
+    <!--        android:text="이미지 등록하기"-->
+    <!--        app:layout_constraintEnd_toEndOf="@id/photoImageView"-->
+    <!--        app:layout_constraintStart_toStartOf="@id/photoImageView"-->
+    <!--        app:layout_constraintTop_toBottomOf="@id/photoImageView" />-->
+
+    <!--    <ImageView-->
+    <!--        android:id="@+id/photoImageView"-->
+    <!--        android:layout_width="250dp"-->
+    <!--        android:layout_height="250dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent" />-->
+
+
     <EditText
         android:id="@+id/titleEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="92dp"
         android:layout_marginEnd="16dp"
         android:hint="상품 이름"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/toolbarUnderLineView" />
 
     <EditText
         android:id="@+id/priceEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="54dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
-        android:hint="가격  / 원 까지 입력하세요."
-
+        android:hint="가격"
+        android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/titleEditText" />
+
     <EditText
         android:id="@+id/ContentEditText"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
         android:layout_marginEnd="16dp"
         android:hint="상품 설명"
-
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.503"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/priceEditText" />
 
-
-<!--    <Button-->
-<!--        android:id="@+id/imageAddButton"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:backgroundTint="@color/orange"-->
-<!--        android:text="이미지 등록하기"-->
-<!--        app:layout_constraintEnd_toEndOf="@id/photoImageView"-->
-<!--        app:layout_constraintStart_toStartOf="@id/photoImageView"-->
-<!--        app:layout_constraintTop_toBottomOf="@id/photoImageView" />-->
-
-<!--    <ImageView-->
-<!--        android:id="@+id/photoImageView"-->
-<!--        android:layout_width="250dp"-->
-<!--        android:layout_height="250dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent" />-->
-
-
     <Spinner
         android:id="@+id/spinnerStatus"
-        android:layout_width="372dp"
-        android:layout_height="27dp"
+        android:layout_width="270dp"
+        android:layout_height="30dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="16dp"
         android:entries="@array/edit_filter_option"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ContentEditText" />
 
     <Button
         android:id="@+id/addButton"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_width="270dp"
+        android:layout_height="50dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/buttonstyle"
         android:text="등록하기"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
 
 
-
-<!--    <ProgressBar-->
-<!--        android:id="@+id/progressBar"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:visibility="gone"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        tools:visibility="visible" />-->
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progressBar"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:visibility="gone"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:visibility="visible" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
