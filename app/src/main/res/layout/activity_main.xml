@@ -7,15 +7,6 @@
     tools:context=".MainActivity">
 
 
-    <!--    <com.google.android.material.bottomnavigation.BottomNavigationView-->
-    <!--        android:id="@+id/bottomnavigation"-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="wrap_content"-->
-    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
-    <!--        app:menu="@menu/menu"-->
-    <!--        tools:ignore="MissingConstraints"-->
-    <!--        android:layout_alignParentBottom="true"-->
-    <!--        ></com.google.android.material.bottomnavigation.BottomNavigationView>-->
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -28,36 +19,27 @@
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="0dp">
 
-        <!--        <Spinner-->
-        <!--            android:id="@+id/spinnerStatus"-->
-        <!--            android:layout_width="100dp"-->
-        <!--            android:layout_height="27dp"-->
-        <!--            android:layout_marginStart="1dp"-->
-        <!--            android:layout_marginTop="20dp"-->
-        <!--            android:layout_marginEnd="16dp"-->
-        <!--            android:entries="@array/filter_options"-->
 
-        <!--            app:layout_constraintHorizontal_bias="1.0" />-->
 
-        <TextView
-            android:id="@+id/main_title"
-            android:layout_width="311dp"
-            android:layout_height="63dp"
-            android:layout_marginStart="100dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:text="판매목록"
-            android:textColor="#000090"
-            android:textSize="30dp"
-            android:textStyle="bold"></TextView>
+<!--        <TextView-->
+<!--            android:id="@+id/main_title"-->
+<!--            android:layout_width="311dp"-->
+<!--            android:layout_height="63dp"-->
+<!--            android:layout_marginStart="100dp"-->
+<!--            android:layout_weight="1"-->
+<!--            android:gravity="center"-->
+<!--            android:text="판매목록"-->
+<!--            android:textColor="#000090"-->
+<!--            android:textSize="30dp"-->
+<!--            android:textStyle="bold"></TextView>-->
 
         <Button
             android:id="@+id/logoutBtn"
             android:layout_width="100dp"
             android:layout_height="40dp"
-            android:layout_marginLeft="10dp"
+            android:layout_marginLeft="320dp"
+            android:layout_marginTop="0dp"
             android:layout_marginRight="20dp"
-            android:layout_marginTop="20dp"
             android:background="@drawable/buttonstyle"
             android:text="로그아웃"
 

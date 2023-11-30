@@ -30,7 +30,8 @@
                 android:layout_width="415dp"
                 android:layout_height="603dp"
                 app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
-                tools:layout_editor_absoluteX="0dp">
+                tools:layout_editor_absoluteX="0dp"
+                tools:ignore="MissingConstraints">
 
 
             </androidx.recyclerview.widget.RecyclerView>
