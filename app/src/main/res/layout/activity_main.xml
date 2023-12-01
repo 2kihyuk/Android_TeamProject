@@ -17,7 +17,8 @@
         android:orientation="horizontal"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        >
 
 
 
@@ -42,6 +43,7 @@
             android:layout_marginRight="20dp"
             android:background="@drawable/buttonstyle"
             android:text="로그아웃"
+
 
             android:textSize="12dp"></Button>
 

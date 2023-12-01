@@ -47,9 +47,9 @@ class SettingsFragment : Fragment() {
                 val userBirth = doc.getString("birthday")
 
                 if(userUidCheck.toString()==auth.currentUser?.uid.toString()){
-                    binding.userEmail.text= auth.currentUser?.email.toString()
-                    binding.userName.text = userName
-                    binding.userBirthday.text = userBirth
+                    binding.userEmail.text= "이메일:" + auth.currentUser?.email.toString()
+                    binding.userName.text = "이름:" +userName
+                    binding.userBirthday.text = "생년 월일:" + userBirth
                 }
 
             }

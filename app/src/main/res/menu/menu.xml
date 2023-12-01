@@ -10,7 +10,8 @@
     <item android:id="@+id/chat"
         android:enabled="true"
         android:icon="@drawable/chat_img"
-        android:title="채팅"></item>
+        android:title="채팅"
+        ></item>
 
     <item android:id="@+id/settings"
         android:enabled="true"
